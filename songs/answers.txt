@@ -1,0 +1,2 @@
+I would charactarize the aura as a Purple aura
+To calculate better the listeners aura, I would introdue more variables to calculate better the listeners preference and mood, and add a contextual analysis to better understand the mood or what or why the listener is listening to the song.
