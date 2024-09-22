@@ -1,0 +1,20 @@
+HTML Tags:
+<!DOCTYPE html> - Declares the document type and HTML version.
+<html> - The root element of an HTML page.
+<head> - Contains meta-information about the document.
+<body> - Contains the contents of an HTML document.
+<header> - Represents a container for introductory content or a set of navigational links.
+<nav> - Defines navigation links within a document.
+<main> - Specifies the main content of a document.
+<section> - Defines a section in a document.
+<div> - Used as a container for HTML elements.
+<a> - Defines a hyperlink.
+
+
+
+CSS Properties:
+background-color - Sets the background color of elements.
+color - Sets the color of text.
+padding - Sets the padding area on all four sides of an element.
+border-radius - Defines the radius of an element's corners.
+margin - Sets the margin area on all four sides of an element.
