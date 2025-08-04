@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: It's bubble sort, because when you use the sorted50000 it's significantly faster than the others. So the sorted one is the Omega(n) which is the fastest compared to the other two that is the O(n squared).
+
+sort2 uses: merge sort
+
+How do you know?: It's the merge sort, because it's the fastest overall.
+
+sort3 uses: selection sort
+
+How do you know?: It's the selection sort, because it has the same average of time independently how the numbers are sorted.
