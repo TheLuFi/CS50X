@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+        <title>Luis Freire CV</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="styles.css" rel="stylesheet">
+        <style>
+            h2, h3 {
+                margin-bottom: 20px;
+            }
+            p, li {
+                font-size: 1.1rem;
+                line-height: 1.6;
+            }
+            ul {
+                list-style-type: disc;
+                margin-left: 20px;
+            }
+            .experience-item:not(:last-child) {
+                margin-bottom: 30px;
+            }
+            .skills-list {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                list-style-type: none;
+                padding: 0;
+            }
+            .skills-list li {
+                background-color: rgba(0, 123, 255, 0.7);
+                color: #ffffff;
+                border-radius: 20px;
+                margin: 5px;
+                padding: 5px 10px;
+                font-size: 0.9rem;
+            }
+            .skills-list i {
+                margin-right: 5px;
+            }
+        </style>
+    <script>
+        // Script from StackOverflow
+    function slideInFromLeft(element, duration = 1000) {
+        let start = null;
+        const initialPosition = -100;
+        const finalPosition = 0;
+
+        // Easing function: ease out cubic
+        function easeOutCubic(x) {
+            return 1 - Math.pow(1 - x, 3);
+        }
+
+        function step(timestamp) {
+            if (!start) start = timestamp;
+            const progress = (timestamp - start) / duration;
+            const easedProgress = easeOutCubic(progress);
+
+            // Calculate current position with easing
+            const currentPosition = initialPosition + (finalPosition - initialPosition) * easedProgress;
+
+            element.style.transform = `translateX(${currentPosition}%)`;
+            element.style.opacity = easedProgress;
+
+            if (progress < 1) {
+                window.requestAnimationFrame(step);
+            } else {
+                element.style.transform = 'translateX(0%)';
+                element.style.opacity = 1;
+            }
+        }
+
+        window.requestAnimationFrame(step);
+    }
+
+    // Apply the animation to all elements with the 'animate-text' class
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll('.animate-text').forEach(el => {
+            setTimeout(() => slideInFromLeft(el), 300);
+        });
+    });
+    </script>
+    </head>
+    <body>
+        <!-- Nav Header -->
+        <header class="p-3 sticky-top text-bg-dark">
+            <div class="container">
+              <div class="f-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="index.html" class="nav-link px-2 text-white">About Me</a></li>
+                  <li><a href="experience.html" class="nav-link px-2 text-secondary">Experience</a></li>
+                  <li><a href="projects.html" class="nav-link px-2 text-white">Projects</a></li>
+                  <li><a href="hobbies.html" class="nav-link px-2 text-white">Hobbies</a></li>
+                  <li><a href="contacts.html" class="nav-link px-2 text-white">Contacts</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+          <main>
+            <video id="background-video" autoplay loop muted>
+                <source src="images/background.mp4" type="video/mp4">
+              </video>
+            <div class="main-content animate-text">
+                <h2>Experience</h2>
+                <div class="experience-item">
+                    <h3>NOS SGPS
+                    <br>IT Support Specialist</h3>
+                    <p>Lisboa, Portugal [01/2024 – 03/2024]</p>
+                    <ul>
+                        <li>Help Desk Support; IT Operations; Technical support; IT Consulting.</li>
+                        <li>AD Administrator; Configure network equipment in Microsoft environments; Identify equipment data and proper system validation.</li>
+                        <li>Use of Ticketing.</li>
+                    </ul>
+                </div>
+
+                <section id="digital-skills">
+                    <h3>Digital Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-code"></i>JavaScript, Python, Java</li>
+                        <li><i class="fas fa-database"></i>MySQL, MongoDB</li>
+                        <li><i class="fab fa-html5"></i>HTML5, CSS3</li>
+                        <li><i class="fas fa-server"></i>Server Management</li>
+                        <li><i class="fab fa-react"></i>React, Angular</li>
+                    </ul>
+                </section>
+
+                <div class="experience-item">
+                    <h3>Instituto de Medicina Molecular
+                    <br>Part-time IT Support Specialist / Windows Administrator Junior</h3>
+                    <p>Lisboa, Portugal [01/2023 – 07/2023]</p>
+                    <ul>
+                        <li>Remote Technical Support</li>
+                        <li>Windows Image Deploy</li>
+                        <li>Configuration and change in Active Directory</li>
+                        <li>Service Desk OTRS (Ticket management and verification)</li>
+                        <li>PDQ deploy for installation of programs</li>
+                        <li>Setting up email boxes in Outlook</li>
+                        <li>Creation of email boxes in Exchange</li>
+                        <li>Microsoft Office 365 installation and configuration</li>
+                        <li>Configuration and deployment of Group Policies</li>
+                        <li>PDQ Inventory</li>
+                        <li>Software center</li>
+                        <li>Windows server configuration and management</li>
+                        <li>File Server Configuration and management</li>
+                        <li>DFS management</li>
+                        <li>Configuration and maintenance in Remote desktop service server</li>
+                    </ul>
+                </div>
+
+                <section id="digital-skills">
+                    <h3>Digital Skills</h3>
+                    <ul class="skills-list">
+                        <li><i class="fas fa-code"></i>JavaScript, Python, Java</li>
+                        <li><i class="fas fa-database"></i>MySQL, MongoDB</li>
+                        <li><i class="fab fa-html5"></i>HTML5, CSS3</li>
+                        <li><i class="fas fa-server"></i>Server Management</li>
+                        <li><i class="fab fa-react"></i>React, Angular</li>
+                    </ul>
+                </section>
+
+                <div class="experience-item">
+                    <h3>Kapsch TrafficCom AG
+                    <br>Developer Trainee</h3>
+                    <p>Vienna, Austria [07/2021 – 09/2021]</p>
+                    <ul>
+                        <li>Participated in an agile development team for the “Inventory Scanner" project.</li>
+                        <li>Collected test data and trained an ML.Net-Model for inventory sticker detection.</li>
+                        <li>Created a .NET-Core REST-service that uses this model in combination with the Tesseract OCR engine to read the text on the stickers.</li>
+                        <li>Developed a test client (WinForms) for this service.</li>
+                        <li>Performed performance analysis of the solution and implemented optimizations.</li>
+                        <li>Tooling used: Visual Studio, Kapsch Global Development Environment, Git.</li>
+                        <li>Setup and tested the compatibility of a replacement camera for the upcoming Austrian MKE hardware update due to end of life.</li>
+                        <li>Researched if EV-charging infrastructure can be used to charge the batteries of enforcement vehicles.</li>
+                        <li>Evaluated and tested various solutions for offline map data generation using Open Street Maps and Leaflet.js.</li>
+                        <li>Automated the import of test data for the Continuous Integration (CI) pipeline.</li>
+                        <li>Conducted market research to create a vendor portfolio for mobile Automatic Number Plate Recognition (ANPR) cameras.</li>
+                    </ul>
+                    <p><a href="https://drive.google.com/file/d/1Utew-zHnMJMwO3TGIAtbWEtBEdI_fYR2/view" class="btn-custom">Reference Letter</a></p>
+                    </div>
+
+                    <section id="digital-skills">
+                        <h3>Digital Skills</h3>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-code"></i>C#, .NET, JavaScript</li>
+                            <li><i class="fas fa-database"></i>ML.NET, Leaflet.js</li>
+                        </ul>
+                    </section>
+                </div>
+        </main>
+    </body>
+</html>

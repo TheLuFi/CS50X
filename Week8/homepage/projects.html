@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
+    <title>Luis Freire CV - Projects</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="styles.css" rel="stylesheet">
+    <style>
+        .project-item {
+            background-color: #333;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .social-links a {
+            color: #007bff;
+            margin-right: 15px;
+        }
+        @keyframes fadeInUp {
+            from {
+                transform: translate3d(0, 40px, 0);
+                opacity: 0;
+            }
+            to {
+                transform: translate3d(0, 0, 0);
+                opacity: 1;
+            }
+        }
+        .animated {
+            animation: fadeInUp 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav Header -->
+    <header class="p-3 sticky-top text-bg-dark">
+        <div class="container">
+            <div class="f-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-white">About Me</a></li>
+                    <li><a href="experience.html" class="nav-link px-2 text-white">Experience</a></li>
+                    <li><a href="projects.html" class="nav-link px-2 text-secondary">Projects</a></li>
+                    <li><a href="hobbies.html" class="nav-link px-2 text-white">Hobbies</a></li>
+                    <li><a href="contacts.html" class="nav-link px-2 text-white">Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <video id="background-video" autoplay loop muted>
+            <source src="images/background.mp4" type="video/mp4">
+          </video>
+        <div class="main-content">
+        <div class="container animated">
+            <h1 class="mb-4">My Projects</h1>
+            <p>Welcome! Below are the projects I'm most proud of, showcasing my skills and dedication to software development. For a comprehensive view of all my work, please visit <a href="your-github-profile-url" title="My GitHub"><i class="fab fa-github"></i> my GitHub profile</a>.</p>
+            <div class="row">
+                <!-- Example Project 1 -->
+                <div class="col-md-6">
+                    <div class="project-item">
+                        <h3>Project Name 1</h3>
+                        <p>Description of Project 1. It's a brief summary of what the project is about and what technologies were used.</p>
+                        <div class="social-links">
+                            <a href="your-github-project-url" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="your-live-project-url" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example Project 2 -->
+                <div class="col-md-6">
+                    <div class="project-item">
+                        <h3>Project Name 2</h3>
+                        <p>Description of Project 2. This project focuses on different aspects and utilizes other technologies.</p>
+                        <div class="social-links">
+                            <a href="your-github-project-url" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="your-live-project-url" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example Project 3 -->
+                <div class="col-md-6">
+                    <div class="project-item">
+                        <h3>Project Name 3</h3>
+                        <p>Description of Project 3. This project focuses on different aspects and utilizes other technologies.</p>
+                        <div class="social-links">
+                            <a href="your-github-project-url" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="your-live-project-url" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Example Project 4 -->
+                <div class="col-md-6">
+                    <div class="project-item">
+                        <h3>Project Name 4</h3>
+                        <p>Description of Project 4. This project focuses on different aspects and utilizes other technologies.</p>
+                        <div class="social-links">
+                            <a href="your-github-project-url" title="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="your-live-project-url" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
+

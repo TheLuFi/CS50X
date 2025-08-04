@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+.main-content {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 960px;
+    margin: 60px auto;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+.btn-custom {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-custom:hover {
+    background-color: #0056b3;
+}
